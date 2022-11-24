@@ -4,9 +4,9 @@
 	.
 	├── check_label.py
 	├── rotation.py
-  ├── flip.py
-  ├── translation.py
-  ├── crop.py
+        ├── flip.py
+        ├── translation.py
+        ├── crop.py
 	├── data_original
 	│   ├── images
 	│   │   └── test00.png
