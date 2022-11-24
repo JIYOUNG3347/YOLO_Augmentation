@@ -5,6 +5,8 @@
 	├── check_label.py
 	├── rotation.py
 	├── flip.py
+	├── translation.py
+	├── crop.py
 	├── data_original
 	│   ├── images
 	│   │   └── test00.png
@@ -51,7 +53,7 @@ python translation.py data_original
 ### 4. Crop
 - 1.0 ~ 1.5 비율 안에서 랜덤하게 Crop
 ```python
-python Crop.py data_original
+python crop.py data_original
 ```
 
 ### 5. 결과 확인
