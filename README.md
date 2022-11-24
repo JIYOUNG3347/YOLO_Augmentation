@@ -43,6 +43,7 @@ python rotation.py data_original -a 45
 ```python
 python flip.py data_original
 ```
+![HorizontalFlip](https://user-images.githubusercontent.com/77952928/203718119-90a628e3-d3c0-494b-86a3-2445644fc44f.png)
 
 ### 3. translation
 - -0.2 ~ 0.2 비율 안에서 랜덤으로 움직임
