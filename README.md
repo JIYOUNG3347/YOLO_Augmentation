@@ -38,14 +38,14 @@ python rotation.py data_original
 python rotation.py data_original -a 45
 ```
 
-### 2. flip
+### 2. Flip
 - Horizontal flip만 구현되어져 있음
 ```python
 python flip.py data_original
 ```
 ![HorizontalFlip](https://user-images.githubusercontent.com/77952928/203719159-38c47ff9-234a-4cda-828a-d57a16e1f466.png)
 
-### 3. translation
+### 3. Translation
 - -0.2 ~ 0.2 비율 안에서 랜덤으로 움직임
 ```python
 python translation.py data_original
