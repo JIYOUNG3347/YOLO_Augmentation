@@ -4,9 +4,7 @@
 	.
 	├── check_label.py
 	├── rotation.py
-        ├── flip.py
-        ├── translation.py
-        ├── crop.py
+	├── flip.py
 	├── data_original
 	│   ├── images
 	│   │   └── test00.png
@@ -21,6 +19,7 @@
 	        ├── test00_000.txt
 	        ├── test00_030.txt
 	        └── ...
+
 
 
 사용법
