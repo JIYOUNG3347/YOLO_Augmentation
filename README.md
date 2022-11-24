@@ -43,21 +43,21 @@ python rotation.py data_original -a 45
 ```python
 python flip.py data_original
 ```
-![HorizontalFlip](https://user-images.githubusercontent.com/77952928/203718696-c5ae0b24-af20-4078-bd15-cd245410e230.png)
+![HorizontalFlip](https://user-images.githubusercontent.com/77952928/203719159-38c47ff9-234a-4cda-828a-d57a16e1f466.png)
 
 ### 3. translation
 - -0.2 ~ 0.2 비율 안에서 랜덤으로 움직임
 ```python
 python translation.py data_original
 ```
-![Translation](https://user-images.githubusercontent.com/77952928/203718739-b8d7640c-2b6d-4311-9fbd-e094fcf04f3a.png)
+![Translation](https://user-images.githubusercontent.com/77952928/203719166-14cdb418-2c04-470c-9f7f-39d2de8799b2.png)
 
 ### 4. Crop
 - 1.0 ~ 1.5 비율 안에서 랜덤하게 Crop
 ```python
 python crop.py data_original
 ```
-![Crop](https://user-images.githubusercontent.com/77952928/203718782-2d45f5c3-e0f6-4d13-b2d2-2b710f4ee19a.png)
+![Crop](https://user-images.githubusercontent.com/77952928/203719174-c3303a64-eaa4-47d0-9fef-0f9c4ba95b09.png)
 
 ### 5. 결과 확인
 ```python
