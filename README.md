@@ -61,5 +61,5 @@ python crop.py data_original
 
 ### 5. 결과 확인
 ```python
-python check_label.py <폴더 이름>
+python check_label.py data_result
 ```
