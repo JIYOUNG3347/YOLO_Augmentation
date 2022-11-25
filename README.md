@@ -52,7 +52,7 @@ python flip.py data_original
 ```python
 python translation.py data_original
 ```
-![translation](https://user-images.githubusercontent.com/77952928/203884355-666d2d98-4618-427a-817f-68e9afeb5b68.png)
+![translation](https://user-images.githubusercontent.com/77952928/203884786-8d66ead2-2f4e-4f96-a02f-0fe4a4ba92bc.png)
 
 ### 4. Crop
 - 1.0 ~ 1.5 비율 안에서 랜덤하게 Crop
