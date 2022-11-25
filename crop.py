@@ -13,7 +13,7 @@ parser.add_argument("dataset_input",
 parser.add_argument("-o",
                     dest="dataset_output",
                     help="directory to store generated data. this directory will be made automatically.",
-                    default="data_rotational")
+                    default="data_result")
 
 parser.add_argument("-t",
                     dest="time_interval",
@@ -39,7 +39,6 @@ dataset_output = args.dataset_output
 time_interval = args.time_interval
 ratio = args.ratio
 show_image = args.show_image
-angle_interval = [0]
 
 dirname_input_image = os.path.join(dataset_input, "images")
 dirname_input_label = os.path.join(dataset_input, "labels")
@@ -128,11 +127,11 @@ for image_name0 in image_names:
         coords.append([coord[0], coord[1], coord[2], coord[3], coord[4]])
 
 
-    for angle in angle_interval:
+    for i in range(1):
         image_name = os.path.join(dirname_output_image,
-                                  os.path.splitext(os.path.basename(image_name0))[0] + "_%03d" % angle + ".jpg")
+                                  os.path.splitext(os.path.basename(image_name0))[0] + "_crop" + ".jpg")
         label_name = os.path.join(dirname_output_label,
-                                  os.path.splitext(os.path.basename(image_name0))[0] + "_%03d" % angle + ".txt")
+                                  os.path.splitext(os.path.basename(image_name0))[0] + "_crop" + ".txt")
         print(image_name)
 
         # Crop ratio
@@ -156,7 +155,6 @@ for image_name0 in image_names:
 
         for coord in coords:
             category, x_left0, y_top0, x_right0, y_bottom0 = coord
-            print("original: ", category, x_left0, y_top0, x_right0, y_bottom0)
             area0 = (x_right0 - x_left0) * (y_bottom0 - y_top0)
 
 
@@ -169,7 +167,6 @@ for image_name0 in image_names:
             x_left, x_right = np.clip([x_left, x_right], 0, width_image0)
             y_top, y_bottom = np.clip([y_top, y_bottom], 0, height_image0)
             area = (x_right - x_left) * (y_bottom - y_top)
-            print("crop: ", category, x_left, y_top, x_right, y_bottom )
             label = coord2label([category, x_left, y_top, x_right, y_bottom], height_image0, width_image0)
             file_label.write(" ".join([str(l) for l in label]) + "\n")
 
