@@ -64,7 +64,7 @@ python translation.py data_original
 
 - 비율 바꾸려면
 ```python
-python translation.py data_original -r <0.3>
+python translation.py data_original -r 0.3
 ```
 
 ### 4. Crop
@@ -76,7 +76,7 @@ python crop.py data_original
 
 - 비율 바꾸려면
 ```python
-python crop.py data_original -r <0.3>
+python crop.py data_original -r 0.3
 ```
 
 ### 5. 결과 확인
